@@ -1,6 +1,5 @@
 # FCD-detection
 
----
 
 ## 3D-UNet on voxel-based data
 
@@ -25,7 +24,5 @@
 * T1_or_seg_or_T2_to_fcd.ipynb - FCD detection fine-tuning with single-headed net
 * T1+seg_to_fcd.ipynb - FCD detection fine-tuning with two-headed net 
 
-
----
 
 ## ResNet on Point Clouds
