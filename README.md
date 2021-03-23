@@ -1,6 +1,9 @@
 # FCD-detection
 
-Focal cortical dysplasia (FCD) is one of the most common epileptogenic lesions associated with cortical development malformations. However, the accurate detection of the FCD relies on the radiologist professionalism, and in many cases, the lesion could be missed. We’ve developed architectures for solving the problem of automatic detection of FCD on 3D MR images using 2 independent approaches: 3D UNet on voxel-based data and ResNet on point clouds. Both architectures were not previously used for that task. Before solving the real problem of FCD detection we first tried to solve the toy ones: grey matter and hippocampus segmentation. Both architectures proved their reasonable applicability on toy problems, but the results on the real problem were not so satisfying. 
+## Description of the problem and obtained results
+
+Focal cortical dysplasia (FCD) is one of the most common epileptogenic lesions associated with cortical development malformations. However, the accurate detection of the FCD relies on the radiologist professionalism, and in many cases, the lesion could be missed. We’ve developed architectures for solving the problem of automatic detection of FCD on 3D MR images using 2 independent approaches: 3D UNet on voxel-based data and ResNet on point clouds. Both architectures were not previously used for that task. Before solving the real problem of FCD detection we first tried to solve the toy ones: grey matter and hippocampus segmentation. Both architectures proved their reasonable applicability on toy problems, but the results on the real problem were not so satisfying. Absence of high quality on the real problem could be explained by lack of data. Experiment results of point cloud-based ResNet showed more accurate results and seem to be more promising than results of voxel-based 3D UNet. As we’ve faced the lack of the data problem, the only further development is to collect more data and rerun the experiments. 
+
 
 ## 3D-UNet on voxel-based data
 
@@ -16,8 +19,6 @@ Focal cortical dysplasia (FCD) is one of the most common epileptogenic lesions a
 * IPython 7.9.0
 * comet_ml 3.2.1
 * torchio 0.18.23
-
-### Usage
 
 ### File Structure
 * landmarks  - directory with landmarks for Histogram Standardization
@@ -40,6 +41,8 @@ Focal cortical dysplasia (FCD) is one of the most common epileptogenic lesions a
 * T1_to_seg.ipynb - training for transfer-learining
 * T1_or_seg_or_T2_to_fcd.ipynb - FCD detection fine-tuning with single-headed net
 * T1+seg_to_fcd.ipynb - FCD detection fine-tuning with two-headed net 
+
+### Usage
 
 
 ## ResNet on Point Clouds
