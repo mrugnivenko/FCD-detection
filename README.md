@@ -26,13 +26,13 @@
 
 
 ## ResNet on Point Clouds
-# Requirements
+### Requirements
 * Ubuntu 16.04
 * Anaconda with python=3.6
 * pytorch>=1.3
 * torchvision with pillow<7
 * cuda=10.1
-# File Structure
+### File Structure
 * cfgs/brain  - directory with configurations for models in each experiment
 * datasets, function, ops, utils  - directories with all the tools used in the project
 * models  - directory with models used in the project
@@ -42,3 +42,7 @@
 * 3 experiment.ipynb - training the model to detect FCD with pointcloud of brain without intensities
 * 4 experiment.ipynb - training the model to detect FCD with pointcloud of brain with intensities
 * visualisation N exp.ipynb (N = 1,2,3,4) - visualisation of losses (train, test) and main metrics (test) for the aformentioned experiments.
+### Usage
+#### Point clouds generation
+#### Training
+#### Visualisation
