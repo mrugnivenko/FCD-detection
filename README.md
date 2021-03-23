@@ -44,5 +44,8 @@
 * visualisation N exp.ipynb (N = 1,2,3,4) - visualisation of losses (train, test) and main metrics (test) for the aformentioned experiments.
 ### Usage
 #### Point clouds generation
+To convert MR images into the point clouds for experiments 1-4 one needs to first put them in .nii format into the datasets/fcd_classification_bank/ folder. Then run the Brain_to_point_clouds.ipynb notebook.
 #### Training
+To conduct any particular experiment out of 4, one needs to first complete "Point clouds generation" step, then training and validation process can be strated with "N experiment.ipynb" (N = 1,2,3,4). Experiment can be conducted in any order. 
 #### Visualisation
+After the experiments you may want to visualise loss functions and see the corresponding metrics. In order to do that you have to run "visualisation N exp.ipynb" (N = 1,2,3,4).
