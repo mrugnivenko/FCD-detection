@@ -26,6 +26,13 @@
 
 
 ## ResNet on Point Clouds
+# Requirements
+* Ubuntu 16.04
+* Anaconda with python=3.6
+* pytorch>=1.3
+* torchvision with pillow<7
+* cuda=10.1
+# File Structure
 * cfgs/brain  - directory with configurations for models in each experiment
 * datasets, function, ops, utils  - directories with all the tools used in the project
 * models  - directory with models used in the project
