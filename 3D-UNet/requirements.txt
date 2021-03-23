@@ -1,0 +1,11 @@
+numpy==1.19.0
+pandas==1.2.1
+tqdm==4.19.9
+nibabel==2.4.0
+scikit-learn==0.24.1
+torch==1.4.0
+unet==0.7.3
+matplotlib==3.3.3
+IPython==7.9.0
+comet_ml==3.2.1
+torchio==0.18.23
