@@ -1,8 +1,25 @@
 # FCD-detection
 
+Focal cortical dysplasia (FCD) is one of the most common epileptogenic lesions associated with cortical development malformations. However, the accurate detection of the FCD relies on the radiologist professionalism, and in many cases, the lesion could be missed. We’ve developed architectures for solving the problem of automatic detection of FCD on 3D MR images using 2 independent approaches: 3D UNet on voxel-based data and ResNet on point clouds. Both architectures were not previously used for that task. Before solving the real problem of FCD detection we first tried to solve the toy ones: grey matter and hippocampus segmentation. Both architectures proved their reasonable applicability on toy problems, but the results on the real problem were not so satisfying. 
 
 ## 3D-UNet on voxel-based data
 
+### Requirements
+* numpy 1.19.0
+* pandas 1.2.1
+* tqdm 4.19.9
+* nibabel 2.4.0
+* scikit-learn 0.24.1
+* torch 1.4.0
+* unet 0.7.3
+* matplotlib 3.3.3
+* IPython 7.9.0
+* comet_ml 3.2.1
+* torchio 0.18.23
+
+### Usage
+
+### File Structure
 * landmarks  - directory with landmarks for Histogram Standardization
 * targets - directory with .csv file, which consists all the available inforamtion about targets
 * utils - directory with all the tools used in project
