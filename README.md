@@ -44,6 +44,9 @@ Focal cortical dysplasia (FCD) is one of the most common epileptogenic lesions a
 
 ### Usage
 
+* To solve gray matter segmentatin problem you have to put data to the folder datasets/fcd_classification_bank/ and run T1_to_seg.ipynb
+* To segment FCD regions using one-headed net with different inputs and loss functions you have to put data to the folder datasets/fcd_classification_bank/ and run T1_or_seg_or_T2_to_fcd.ipynb
+* * To segment FCD regions using two-headed net with differentloss functions you have to put data to the folder datasets/fcd_classification_bank/ and run T1+seg_to_fcd.ipynb
 
 ## ResNet on Point Clouds
 ### Requirements
