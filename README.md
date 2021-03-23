@@ -26,3 +26,12 @@
 
 
 ## ResNet on Point Clouds
+* cfgs/brain  - directory with configurations for models in each experiment
+* datasets, function, ops, utils  - directories with all the tools used in the project
+* models  - directory with models used in the project
+* Brain_to_point_clouds.ipynb - transforms 3d tensors of brains into Point Clouds and saves it
+* 1 experiment.ipynb - training the model to detect hippocampus with pointcloud of brain without intensities
+* 2 experiment.ipynb - training the model to detect hippocampus with pointcloud of brain with intensities
+* 3 experiment.ipynb - training the model to detect FCD with pointcloud of brain without intensities
+* 4 experiment.ipynb - training the model to detect FCD with pointcloud of brain with intensities
+* visualisation N exp.ipynb (N = 1,2,3,4) - visualisation of losses (train, test) and main metrics (test) for the aformentioned experiments.
